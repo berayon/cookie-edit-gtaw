@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Cookie Editor",
+    "version": "1.0",
+    "description": "Edits Max-Age of specific cookie on forum.gtaw.me",
+    "permissions": [
+      "activeTab",
+      "cookies"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://forum.gtaw.me/"],
+        "js": ["contentScript.js"]
+      }
+    ]
+}
